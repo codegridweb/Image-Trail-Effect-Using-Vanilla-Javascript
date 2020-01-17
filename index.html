@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Image Trail Using Vanilla JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="img-1 img"></div>
+    <div class="img-2 img"></div>
+    <div class="img-3 img"></div>
+    <div class="img-4 img"></div>
+    <div class="img-5 img"></div>
+
+    <div class="container">
+      <h1>X&^JSO9 -98</h1>
+    </div>
+    <script>
+      const img1 = document.querySelector(".img-1");
+      const img2 = document.querySelector(".img-2");
+      const img3 = document.querySelector(".img-3");
+      const img4 = document.querySelector(".img-4");
+      const img5 = document.querySelector(".img-5");
+
+      document.addEventListener("mousemove", e => {
+        img1.setAttribute(
+          "style",
+          "top :" + (e.pageY - 225) + "px; left: " + (e.pageX - 200) + "px"
+        );
+        img2.setAttribute(
+          "style",
+          "top :" + (e.pageY - 225) + "px; left: " + (e.pageX - 200) + "px"
+        );
+        img3.setAttribute(
+          "style",
+          "top :" + (e.pageY - 225) + "px; left: " + (e.pageX - 200) + "px"
+        );
+        img4.setAttribute(
+          "style",
+          "top :" + (e.pageY - 225) + "px; left: " + (e.pageX - 200) + "px"
+        );
+        img5.setAttribute(
+          "style",
+          "top :" + (e.pageY - 225) + "px; left: " + (e.pageX - 200) + "px"
+        );
+      });
+    </script>
+  </body>
+</html>
